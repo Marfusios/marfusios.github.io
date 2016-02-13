@@ -5,7 +5,6 @@ html(lang="en")
 
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
-    meta(name='google-site-verification' content='1G6kyD_dP6fBzWT1V3V0ID_kbCPhPwquE8Q9K76aCkQ')
 
     meta(name='description' content=metaDescription)
     meta(name='keywords' content=metaKeywords)
@@ -19,7 +18,7 @@ html(lang="en")
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-65302929-1', 'auto');
+      ga('create', 'UA-73751225-1', 'auto');
       ga('send', 'pageview');
 
   body
@@ -27,11 +26,14 @@ html(lang="en")
 
       //- Header
       header.row
-        .col-md-8
+        .col-md-10
           .media
             .media-left
-              //- Photo
-              img#head.media-object.img-circle(src='dist/images/head.jpg' itemprop='image' alt='Photo of #{name}')
+              //- Logo
+              img#head.media-object.img-circle(src='dist/images/logo.png' itemprop='image' alt='Logo of #{name}')
+            .media-left
+              //- Picture
+              img#head.media-object.img-circle(src='dist/images/head.png' itemprop='image' alt='Picture of #{name}')
             .media-body
               //- Name & title
               h1#name(itemprop='name')
@@ -39,7 +41,8 @@ html(lang="en")
                 =' '
                 span(itemprop='familyName')=familyName
               p#title(itemprop='jobTitle')=title
-        .col-md-4
+        .col-md-2
+            
           //- Personal details
           ul#personalDetails
 
@@ -61,11 +64,12 @@ html(lang="en")
                 span.fa.fa-2x.fa-stack-overflow(aria-hidden='true')
                 span.sr-only Stack Overflow profile
 
-              span.sr-only=', '
 
-              a(href=profiles.soundcloud itemprop='url' target='_blank' title='SoundCloud profile')
-                span.fa.fa-2x.fa-soundcloud(aria-hidden='true')
-                span.sr-only SoundCloud profile
+              //- span.sr-only=', '
+
+              //- a(href=profiles.soundcloud itemprop='url' target='_blank' title='SoundCloud profile')
+              //-   span.fa.fa-2x.fa-soundcloud(aria-hidden='true')
+              //-  span.sr-only SoundCloud profile
 
               span.sr-only=', '
 
@@ -73,16 +77,18 @@ html(lang="en")
                 span.fa.fa-2x.fa-linkedin(aria-hidden='true')
                 span.sr-only LinkedIn profile
 
-              span.sr-only=', '
+              
+              //- span.sr-only=', '
 
-              a(href=profiles.skype itemprop='url' target='_blank' title='Skype profile')
-                span.fa.fa-2x.fa-skype(aria-hidden='true')
-                span.sr-only Skype profile
+              //- a(href=profiles.skype itemprop='url' target='_blank' title='Skype profile')
+              //-   span.fa.fa-2x.fa-skype(aria-hidden='true')
+              //-  span.sr-only Skype profile
       
       //- Summary
       section#summary(itemprop='description')
         h2.sr-only Summary
         p=summary
+        p=summary2
 
       //- Skills
       section#skillGroups

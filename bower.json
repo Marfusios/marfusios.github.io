@@ -2,9 +2,9 @@
   "name": "CV",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.3.4",
-    "source-sans-pro": "release",
-    "font-awesome": "~4.3.0"
+    "bootstrap": "3.3.4",
+    "source-sans-pro": "1.0.0",
+    "font-awesome": "4.3.0"
   },
   "overrides": {
     "source-sans-pro": {

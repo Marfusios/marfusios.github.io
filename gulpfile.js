@@ -47,7 +47,7 @@ var paths = {
 var plumberOptions = { errorHandler: notify.onError('<%= error.message %>') };
 
 // copy some files from 'bower_components'
-gulp.task('main-bower-files', ['clean-main-bower-files'], function() {
+gulp.task('main-bower-files', function() {
     return gulp.src(mainBowerFiles(), { base: paths.mainBowerComponentsSrc })
         .pipe(gulp.dest(paths.mainBowerComponentsDest));
 });
