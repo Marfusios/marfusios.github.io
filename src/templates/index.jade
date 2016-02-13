@@ -1,0 +1,208 @@
+doctype html
+html(lang="en")
+  head
+    title=name
+
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='google-site-verification' content='1G6kyD_dP6fBzWT1V3V0ID_kbCPhPwquE8Q9K76aCkQ')
+
+    meta(name='description' content=metaDescription)
+    meta(name='keywords' content=metaKeywords)
+    meta(http-equiv='last-modified' content=lastModified)
+
+    link(rel='stylesheet', type='text/css', href='dist/styles/main.css')
+
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-65302929-1', 'auto');
+      ga('send', 'pageview');
+
+  body
+    .container(itemscope itemtype='http://schema.org/Person')
+
+      //- Header
+      header.row
+        .col-md-8
+          .media
+            .media-left
+              //- Photo
+              img#head.media-object.img-circle(src='dist/images/head.jpg' itemprop='image' alt='Photo of #{name}')
+            .media-body
+              //- Name & title
+              h1#name(itemprop='name')
+                span(itemprop='givenName')=givenName
+                =' '
+                span(itemprop='familyName')=familyName
+              p#title(itemprop='jobTitle')=title
+        .col-md-4
+          //- Personal details
+          ul#personalDetails
+
+            //- Email
+            li
+              span.fa.fa-envelope-o.icon-spaced
+              a(href='mailto:'+personalDetails.email itemprop='email') #{personalDetails.email}
+
+            //- Profile badges
+            li#profileBadges
+
+              a(href=profiles.github itemprop='url' target='_blank' title='GitHub profile')
+                span.fa.fa-2x.fa-github(aria-hidden='true')
+                span.sr-only GitHub profile
+
+              span.sr-only=', '
+
+              a(href=profiles.stackOverflow itemprop='url' target='_blank' title='Stack Overflow profile')
+                span.fa.fa-2x.fa-stack-overflow(aria-hidden='true')
+                span.sr-only Stack Overflow profile
+
+              span.sr-only=', '
+
+              a(href=profiles.soundcloud itemprop='url' target='_blank' title='SoundCloud profile')
+                span.fa.fa-2x.fa-soundcloud(aria-hidden='true')
+                span.sr-only SoundCloud profile
+
+              span.sr-only=', '
+
+              a(href=profiles.linkedIn itemprop='url' target='_blank' title='LinkedIn profile')
+                span.fa.fa-2x.fa-linkedin(aria-hidden='true')
+                span.sr-only LinkedIn profile
+
+              span.sr-only=', '
+
+              a(href=profiles.skype itemprop='url' target='_blank' title='Skype profile')
+                span.fa.fa-2x.fa-skype(aria-hidden='true')
+                span.sr-only Skype profile
+      
+      //- Summary
+      section#summary(itemprop='description')
+        h2.sr-only Summary
+        p=summary
+
+      //- Skills
+      section#skillGroups
+        h2 Skills
+
+        .row
+          each skillGroup in skillGroups
+
+            //- Skill group
+            .skillGroup.col-lg-3.col-md-4.col-sm-6
+
+              //- Title
+              h3=skillGroup.title
+
+              //- Descrtiption
+              ul
+                each item in skillGroup.items
+                  li=item
+
+      //- Professional experience
+      section#jobs
+        h2 Professional experience
+
+        each job in jobs
+          //- Job
+          .job
+
+            //- Title
+            h3(itemprop='jobTitle')=job.title
+
+            ul.subheading(itemscope itemprop='worksFor' itemtype='http://schema.org/Organization')
+              //- Company
+              if (job.company)
+                li
+                  a(href=job.company.url target='_blank', itemprop='url')
+                    span(itemprop='name')=job.company.name
+                  meta(itemprop='telephone' content=job.company.telephone)
+              else
+                li.sr-only
+                  =job.title
+                  meta(itemprop='name' content=job.title)
+                  meta(itemprop='telephone' content='')
+
+              //- Location
+              if (job.location)
+                li(itemprop='address')=job.location
+              
+              //- Time
+              if (Array.isArray(job.time))
+
+                //- List of times
+                each time in job.time
+                  li
+                    span=time.from
+                    span &ndash;
+                    span=time.to
+              else
+
+                //- Single time
+                li
+                  span=job.time.from
+                  span &ndash;
+                  span=job.time.to
+
+            //- Description
+            ul
+              each item in job.descriptionItems
+                li=item
+
+      //- Projects & publications
+      section#projects
+        h2 Projects &amp; publications
+
+        each project in projects
+
+          //- Project
+          .project(itemscope itemtype='http://schema.org/CreativeWork')
+
+            //- Title
+            h3(itemprop='name')=project.title
+            meta(itemprop='author' content=name)
+
+            //- URL
+            if (project.url)
+              ul.subheading
+                li
+                  a(href=project.url target='_blank' itemprop='url')=project.url
+
+            //- Description
+            ul
+              each item in project.descriptionItems
+                li(itemprop='description')=item
+
+      //- Education
+      section#education
+        h2 Education
+
+        //- School
+        each school in education
+          .school(itemprop='alumniOf' itemscope itemtype='http://schema.org/CollegeOrUniversity')
+
+            //- Title
+            h3=school.title
+            meta(itemprop='telephone' content=school.telephone)
+
+            //- Details
+            ul.subheading
+              li(itemprop='name')=school.institute
+              li(itemprop='address')=school.location
+              li=school.type
+              li
+                span=school.time.from
+                span &ndash;
+                span=school.time.to
+
+            //- Description
+            ul
+              each item in school.descriptionItems
+                li=item
+
+      //- Footer
+      footer
+        p Last modified on #{lastModified}.

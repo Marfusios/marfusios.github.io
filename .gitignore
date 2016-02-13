@@ -1,0 +1,7 @@
+# Packages
+node_modules/
+bower_components/
+src/third-party/
+
+# Cloud9 IDE
+.c9/
