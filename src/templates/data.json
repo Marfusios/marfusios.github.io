@@ -135,7 +135,12 @@
 			"title": "Super Maze",
 			"descriptionItems": [ "Multiplatform game. It's created with the MonoGame framework (Open Source version of the XNA)" ],
 			"url": "http://apps.microsoft.com/windows/app/super-maze/87034b7a-9412-4edb-8851-f5244f413062"
-		}
+		},
+        {
+            "title": "Issues of acquiring client data with touch-based interfaces",
+            "descriptionItems": [ "Bachelor thesis", "Implementing touch-based web client for existing hospital IS" ],
+            "url": "http://is.muni.cz/th/395971/fi_b/"
+        }
 	],
     
 	"education": [
