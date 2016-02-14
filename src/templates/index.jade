@@ -10,6 +10,7 @@ html(lang="en")
     meta(name='keywords' content=metaKeywords)
     meta(http-equiv='last-modified' content=lastModified)
 
+    link(rel='stylesheet', type='text/css', href='dist/styles/w3.css')
     link(rel='stylesheet', type='text/css', href='dist/styles/main.css')
 
     script.
@@ -22,7 +23,7 @@ html(lang="en")
       ga('send', 'pageview');
 
   body
-    .container(itemscope itemtype='http://schema.org/Person')
+    .container(itemscope itemtype='http://schema.org/Person')#mainContainer
 
       //- Header
       header.row
@@ -85,13 +86,13 @@ html(lang="en")
               //-  span.sr-only Skype profile
       
       //- Summary
-      section#summary(itemprop='description')
+      section#summary(itemprop='description').w3-card-2.w3-animate-left
         h2.sr-only Summary
         p=summary
         p=summary2
 
       //- Skills
-      section#skillGroups
+      section#skillGroups.w3-card-2.w3-animate-right
         h2 Skills
 
         .row
@@ -109,7 +110,7 @@ html(lang="en")
                   li=item
 
       //- Professional experience
-      section#jobs
+      section#jobs.w3-card-2.w3-animate-left
         h2 Professional experience
 
         each job in jobs
@@ -159,7 +160,7 @@ html(lang="en")
                 li=item
 
       //- Projects & publications
-      section#projects
+      section#projects.w3-card-2.w3-animate-right
         h2 Projects &amp; publications
 
         each project in projects
@@ -183,7 +184,7 @@ html(lang="en")
                 li(itemprop='description')=item
 
       //- Education
-      section#education
+      section#education.w3-card-2.w3-animate-left
         h2 Education
 
         //- School
@@ -208,6 +209,17 @@ html(lang="en")
             ul
               each item in school.descriptionItems
                 li=item
+
+      //- Languages
+      section#languages.w3-card-2.w3-animate-right
+        h2 Languages
+        .language(itemprop='alumniOf' itemscope itemtype='http://schema.org/Language')
+          ul
+            each lang in languages
+              li
+                span.langName=lang.name
+                ='  -  '
+                span.langProf=lang.proficiency  
 
       //- Footer
       footer

@@ -22,7 +22,7 @@
 		"soundcloud": "https://soundcloud.com/marfusios"
 	},
 
-	"summary": "I am a passionate software developer from Czech Republic who is continuously improving software craftsmanship skills. ",
+	"summary": "I am a passionate software developer from Czech Republic who is continuously improving software craftsmanship.",
 	"summary2": "I'm putting emphasis on software quality and clean code. I'm interested in the enterprise software development and I have great expertise in all .NET technologies.",
 
 	"skillGroups": [
@@ -59,7 +59,8 @@
 				"Version control - SVN, Git",
                 "Continuous integration - TeamCity, Bamboo",
                 "Agile methodology - Scrum",
-				"Experience with functional programming paradigm (Haskell and F#)"
+				"Experience with functional programming paradigm (Haskell and F#)",
+                "Knowledge of Java, C++, Python"
 			]
 		}
 	],
@@ -150,6 +151,21 @@
 			"descriptionItems": [
 
 			]
+		}
+	],
+    
+    "languages": [
+		{
+			"name": "Czech",
+			"proficiency": "Native or bilingual proficiency"
+		},
+		{
+			"name": "Polish",
+            "proficiency": "Native or bilingual proficiency"
+		},
+		{
+			"name": "English",
+            "proficiency": "Professional working proficiency"
 		}
 	]
 

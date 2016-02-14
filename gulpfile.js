@@ -42,6 +42,10 @@ var paths = {
     copyImagesSrc: './src/images/*',
     copyImagesDest: './dist/images',
     copyImagesClean: './dist/images',
+    
+    w3Src: './src/styles/w3.css',
+    w3Dest: './dist/styles',
+    w3Clean: './dist/styles',
 };
 
 var plumberOptions = { errorHandler: notify.onError('<%= error.message %>') };
@@ -135,14 +139,24 @@ gulp.task('clean-copy-images', function() {
         .pipe(vinylPaths(del));
 });
 
+// copy w3 css
+gulp.task('copy-w3', ['clean-copy-w3'], function() {
+    return gulp.src(paths.w3Src)
+        .pipe(gulp.dest(paths.w3Dest));
+});
+gulp.task('clean-copy-w3', function() {
+    return gulp.src(paths.w3Clean)
+        .pipe(vinylPaths(del));
+});
+
 // cleans all files created by gulp
-gulp.task('clean', ['clean-main-bower-files', 'clean-less', 'clean-jade', 'clean-copy-fonts', 'clean-copy-images']);
+gulp.task('clean', ['clean-main-bower-files', 'clean-less', 'clean-jade', 'clean-copy-fonts', 'clean-copy-images', 'clean-copy-w3']);
 
 // compile for production
-gulp.task('default', ['minify-css', 'jade', 'copy-fonts', 'copy-images']);
+gulp.task('default', ['minify-css', 'jade', 'copy-fonts', 'copy-images', 'copy-w3']);
 
 // compile for development
-gulp.task('dev', ['less-dev', 'jade-dev', 'copy-fonts', 'copy-images']);
+gulp.task('dev', ['less-dev', 'jade-dev', 'copy-fonts', 'copy-images', 'copy-w3']);
 
 // start static server
 gulp.task('server', function(done) {
