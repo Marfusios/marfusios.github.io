@@ -1,12 +1,12 @@
 {
-	"lastModified": "2016-03-04",
+	"lastModified": "2016-06-16",
 
 	"name": "Mariusz Kotas",
 	"givenName": "Mariusz",
 	"familyName": "Kotas",
 
-	"metaKeywords": "Mariusz Kotas, CV, personal page, developer, craftsman, programmer, programming, software developer, engineer, craftsmanship, agile, lean",
-	"metaDescription": "I am a passionate software developer/craftsman from Czech Republic, this is my CV.",
+	"metaKeywords": "Mariusz Kotas, CV, personal page, developer, craftsman, pragmatic, programmer, programming, software developer, engineer, craftsmanship, agile, lean",
+	"metaDescription": "I am a passionate pragmatic software developer/craftsman from Czech Republic, this is my CV.",
 
 	"title": "Software Craftsman",
 
@@ -23,16 +23,17 @@
 		"soundcloud": "https://soundcloud.com/marfusios"
 	},
 
-	"summary": "I am a passionate software developer from Czech Republic who is continuously improving software craftsmanship.",
-	"summary2": "I'm putting emphasis on software quality and clean code. I'm interested in the enterprise software development and I have great expertise in all .NET technologies.",
+	"summary": "I am a passionate pragmatic software developer from Czech Republic who is continuously improving software craftsmanship.",
+	"summary2": "I'm putting emphasis on a software quality and clean code. I'm interested in the enterprise software development and I have great expertise in all .NET technologies.",
 
 	"skillGroups": [
         {
 			"title": "Architecture",
 			"items": [
 				"DDD, CQRS, Event sourcing",
-				"Microservices, REST, Service bus (MassTransit)",
-				"SOLID principles, TDD, design patterns"
+				"Microservices, REST, Service bus (MassTransit, RabbitMQ)",
+				"SOLID principles, TDD, design patterns",
+				"Clean, pragmatic codebase"
 			]
 		},
 		{
@@ -41,7 +42,9 @@
 				"Perfect knowledge of C#",
 				"WPF, Windows Forms, ASP.NET MVC, WebAPI, UWP/WinRT",
 				"Npgsql, Entity Framework",
-				"Experience with DI containers (Unity, SimpleInjector, etc.), DevExpress, NUnit, xUnit, NuGet and ReSharper"
+				"Experience with DI containers (Unity, SimpleInjector, etc.), DevExpress, NUnit, xUnit, NuGet and ReSharper",
+				"SSO - OpenID, OAuth (IdentityServer3/4)",
+				"Keeping up to date with .NET Core (rc2), EF7, ASP.NET Core and cross platform development"
 			]
 		},
 		{
@@ -56,10 +59,10 @@
 		{
 			"title": "Other",
 			"items": [
-				"Web development - Js, Typescript, SPA (Angular)",
+				"Web development - Js, Typescript, SPA (AngularJs, Angular2)",
 				"Version control - SVN, Git",
                 "Continuous integration - TeamCity, Bamboo",
-                "Agile methodology - Scrum",
+                "Agile methodology - Scrum (Jira, Confluence)",
 				"Experience with functional programming paradigm (Haskell and F#)",
                 "Knowledge of Java, C++, Python"
 			]
@@ -79,7 +82,8 @@
 				"to": "present"
 			},
 			"descriptionItems": [
-				"Innovative projects"
+				"Innovative projects",
+				".NET Core, Angular 2"
 			]
 		},
 		{
@@ -121,6 +125,11 @@
 			"title": "Encryptor",
 			"descriptionItems": [ "Hobby project, the encryption app (Windows 10) for paranoid people" ],
 			"url": "https://www.microsoft.com/en-us/store/apps/mk-encryptor/9nblggh682ch"
+		},
+		{
+			"title": "MKEncryptor.Core",
+			"descriptionItems": [ "Open-source encryption portable library/wrapper for C#. It is used in commercial product Encryptor (see above)." ],
+			"url": "https://github.com/Marfusios/MKEncryptor.Core"
 		},
 		{
 			"title": "MKEventAggregator",
