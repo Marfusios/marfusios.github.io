@@ -1,11 +1,11 @@
 {
-	"lastModified": "2016-06-16",
+	"lastModified": "2016-07-11",
 
 	"name": "Mariusz Kotas",
 	"givenName": "Mariusz",
 	"familyName": "Kotas",
 
-	"metaKeywords": "Mariusz Kotas, CV, personal page, developer, craftsman, pragmatic, programmer, programming, software developer, engineer, craftsmanship, agile, lean",
+	"metaKeywords": "Mariusz Kotas, CV, personal page, developer, craftsman, pragmatic, programmer, programming, software developer, engineer, craftsmanship, agile, lean, upwork, freelancer",
 	"metaDescription": "I am a passionate pragmatic software developer/craftsman from Czech Republic, this is my CV.",
 
 	"title": "Software Craftsman",
@@ -30,10 +30,10 @@
         {
 			"title": "Architecture",
 			"items": [
-				"DDD, CQRS, Event sourcing",
-				"Microservices, REST, Service bus (MassTransit, RabbitMQ)",
+				"Clean, pragmatic codebase",
 				"SOLID principles, TDD, design patterns",
-				"Clean, pragmatic codebase"
+				"DDD, CQRS, Event sourcing",
+				"Microservices, REST, Service bus (MassTransit, RabbitMQ)"
 			]
 		},
 		{
@@ -44,7 +44,7 @@
 				"Npgsql, Entity Framework",
 				"Experience with DI containers (Unity, SimpleInjector, etc.), DevExpress, NUnit, xUnit, NuGet and ReSharper",
 				"SSO - OpenID, OAuth (IdentityServer3/4)",
-				"Keeping up to date with .NET Core (rc2), EF7, ASP.NET Core and cross platform development"
+				"Keeping up to date with .NET Core (rtm), EF7, ASP.NET Core and cross platform development"
 			]
 		},
 		{
