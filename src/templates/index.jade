@@ -163,6 +163,56 @@ html(lang="en")
               each item in job.descriptionItems
                 li=item
 
+      //- Freelance experience
+      section#jobs.w3-card-2.w3-animate-left
+        h2 Freelance experience
+
+        each job in jobsFreelance
+          //- Job
+          .job
+
+            //- Title
+            h3(itemprop='jobTitle')=job.title
+
+            ul.subheading(itemscope itemprop='worksFor' itemtype='http://schema.org/Organization')
+              //- Company
+              if (job.company)
+                li
+                  a(href=job.company.url target='_blank', itemprop='url')
+                    span(itemprop='name')=job.company.name
+                  meta(itemprop='telephone' content=job.company.telephone)
+              else
+                li.sr-only
+                  =job.title
+                  meta(itemprop='name' content=job.title)
+                  meta(itemprop='telephone' content='')
+
+              //- Location
+              if (job.location)
+                li(itemprop='address')=job.location
+              
+              //- Time
+              if (Array.isArray(job.time))
+
+                //- List of times
+                each time in job.time
+                  li
+                    span=time.from
+                    span &ndash;
+                    span=time.to
+              else
+
+                //- Single time
+                li
+                  span=job.time.from
+                  span &ndash;
+                  span=job.time.to
+
+            //- Description
+            ul
+              each item in job.descriptionItems
+                li=item
+
       //- Projects & publications
       section#projects.w3-card-2.w3-animate-right
         h2 Projects &amp; publications
@@ -224,6 +274,15 @@ html(lang="en")
                 span.langName=lang.name
                 ='  -  '
                 span.langProf=lang.proficiency  
+              
+      //- Favorite books
+      section#languages.w3-card-2.w3-animate-right
+        h2 Favorite books
+        .language
+          ul
+            each book in books
+              li
+                span=book
 
       //- Footer
       footer

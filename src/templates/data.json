@@ -1,5 +1,5 @@
 {
-	"lastModified": "2016-07-11",
+	"lastModified": "2017-01-19",
 
 	"name": "Mariusz Kotas",
 	"givenName": "Mariusz",
@@ -44,7 +44,7 @@
 				"Npgsql, Entity Framework",
 				"Experience with DI containers (Unity, SimpleInjector, etc.), DevExpress, NUnit, xUnit, NuGet and ReSharper",
 				"SSO - OpenID, OAuth (IdentityServer3/4)",
-				"Keeping up to date with .NET Core (rtm), EF7, ASP.NET Core and cross platform development"
+				"Keeping up to date with .NET Core (rtm), EF Core, ASP.NET Core and cross platform development"
 			]
 		},
 		{
@@ -59,7 +59,7 @@
 		{
 			"title": "Other",
 			"items": [
-				"Web development - Js, Typescript, SPA (AngularJs, Angular2)",
+				"Web development - Js, Typescript, SPA (Angular2)",
 				"Version control - SVN, Git",
                 "Continuous integration - TeamCity, Bamboo",
                 "Agile methodology - Scrum (Jira, Confluence)",
@@ -71,6 +71,18 @@
 
 	"jobs": [
 		{
+			"title": "IT Contractor",
+			"location": "Prague, Czech Republic",
+			"time": {
+				"from": "January 2017",
+				"to": "present"
+			},
+			"descriptionItems": [
+				"Flexiana s.r.o.",
+				"Alza.cz a.s."
+			]
+		},
+		{
 			"title": "Senior Software Developer",
 			"company": {
 				"name": "Konica Minolta - Business Innovation Centre",
@@ -79,7 +91,7 @@
 			"location": "Brno, Czech Republic",
 			"time": {
 				"from": "February 2016",
-				"to": "present"
+				"to": "December 2016"
 			},
 			"descriptionItems": [
 				"Innovative projects",
@@ -116,6 +128,39 @@
 			},
 			"descriptionItems": [
 				"Operating system for pensioner"
+			]
+		}
+	],
+
+	"jobsFreelance": [
+		{
+			"title": "Primus Monitoring",
+			"company": {
+				"name": "Artio s.r.o.",
+				"url": "http://www.artio.net/"
+			},
+			"time": {
+				"from": "May 2016",
+				"to": "December 2016"
+			},
+			"descriptionItems": [
+				"Monitoring system for industrial washing machines",
+				"Desktop and web application (WinForms, ASP.NET MVC, DotVVM)"
+			]
+		},
+		{
+			"title": "Keyword Filter Application",
+			"company": {
+				"name": "0ptim1ze lte",
+				"url": "https://www.0ptim1ze.com/"
+			},
+			"time": {
+				"from": "June 2016",
+				"to": "July 2016"
+			},
+			"descriptionItems": [
+				"Postprocessing for Google AdWords planner",
+				"Desktop application (WPF, Material design)"
 			]
 		}
 	],
@@ -182,6 +227,12 @@
 			"name": "English",
             "proficiency": "Professional working proficiency"
 		}
+	],
+
+	 "books": [
+		"Pragmatic Programmer (A. Hunt, D. Thomas)",
+		"Clean Code and Agile Principles, Patterns, and Practices (Uncle Bob)",
+		"Domain-Driven Design: Tackling Complexity in the Heart of Software (E. Evans)"
 	]
 
 }
