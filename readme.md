@@ -23,3 +23,5 @@ Built using following libraries:
 		- [gulp-data](https://github.com/colynb/gulp-data)
 		- [gulp-livereload](https://github.com/vohof/gulp-livereload)
 - [schema.org](http://schema.org/) (for semantics through Microdata) 
+
+M. Kotas
