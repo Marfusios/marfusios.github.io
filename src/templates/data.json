@@ -1,5 +1,5 @@
 {
-	"lastModified": "2017-01-19",
+	"lastModified": "2019-02-26",
 
 	"name": "Mariusz Kotas",
 	"givenName": "Mariusz",
@@ -33,7 +33,7 @@
 				"Clean, pragmatic codebase",
 				"SOLID principles, TDD, design patterns",
 				"DDD, CQRS, Event sourcing",
-				"Microservices, REST, Service bus (MassTransit, RabbitMQ)"
+				"Microservices, REST, gRPC"
 			]
 		},
 		{
@@ -41,30 +41,32 @@
 			"items": [
 				"Perfect knowledge of C#",
 				"WPF, Windows Forms, ASP.NET MVC, WebAPI, UWP/WinRT",
-				"Npgsql, Entity Framework",
-				"Experience with DI containers (Unity, SimpleInjector, etc.), DevExpress, NUnit, xUnit, NuGet and ReSharper",
+				"Entity Framework",
+				"Experience with DI containers, DevExpress, xUnit, NuGet and ReSharper",
 				"SSO - OpenID, OAuth (IdentityServer3/4)",
-				"Keeping up to date with .NET Core (rtm), EF Core, ASP.NET Core and cross platform development"
+				"Keeping up to date with .NET Core, EF Core, ASP.NET Core and cross platform development"
 			]
 		},
 		{
-			"title": "Databases",
+			"title": "Web frontend",
 			"items": [
-				"Good knowledge of SQL language",
-				"ER diagramming",
-				"Stored procedures in PL/SQL",
-				"Experience with PostgreSQL, Microsoft SQL Server, SQLite"
+				"Javascript, Typescript",
+				"SPA - Angular 2+, VueJS",
+				"ASP.NET MVC and WebAPI",
+				"GraphQL and REST API design"
 			]
 		},
 		{
 			"title": "Other",
 			"items": [
-				"Web development - Js, Typescript, SPA (Angular2)",
+				"Good knowledge of SQL language",
+				"Experience with PostgreSQL, Microsoft SQL Server, SQLite and PL/SQL",
 				"Version control - SVN, Git",
-                "Continuous integration - TeamCity, Bamboo",
-                "Agile methodology - Scrum (Jira, Confluence)",
+                "Continuous integration - TeamCity, Bamboo, Jenkins",
+                "Agile methodology - Scrum (Jira, Confluence), Kanban",
 				"Experience with functional programming paradigm (Haskell and F#)",
-                "Knowledge of Java, C++, Python"
+                "Knowledge of Java, C++, Python",
+				"Bitcoin, cryptocurrencies and quantitative trading"
 			]
 		}
 	],
@@ -80,7 +82,24 @@
 			"descriptionItems": [
 				"Flexiana s.r.o.",
 				"Alza.cz a.s."
-			]
+			],
+			"img": "mk.png"
+		},
+		{
+			"title": "Co-Founder",
+			"company": {
+				"name": "Mañana Capital",
+				"url": "https://manana.capital/"
+			},
+			"location": "Prague, Czech Republic",
+			"time": {
+				"from": "January 2018",
+				"to": "present"
+			},
+			"descriptionItems": [
+				"A fully automated quantitative crypto trading"
+			],
+			"img": "manana.png"
 		},
 		{
 			"title": "Senior Software Developer",
@@ -96,7 +115,8 @@
 			"descriptionItems": [
 				"Innovative projects",
 				".NET Core, Angular 2"
-			]
+			],
+			"img": "konica.png"
 		},
 		{
 			"title": "Software Developer",
@@ -113,7 +133,8 @@
 				"Hospital information system",
 				"Chemical process simulator",
 				"IS builder: framework for rapid development large information systems"
-			]
+			],
+			"img": "seacomp.png"
 		},
 		{
 			"title": "Software Developer (C#)",
@@ -128,11 +149,33 @@
 			},
 			"descriptionItems": [
 				"Operating system for pensioner"
-			]
+			],
+			"img": "celebrio.jpeg"
 		}
 	],
 
 	"jobsFreelance": [
+		{
+			"title": "Adnext Crypto",
+			"company": {
+				"name": "Adnext Globalmedia, SL",
+				"url": "http://crypto.adsearches.net"
+			},
+			"time": {
+				"from": "December 2018",
+				"to": "February 2019"
+			},
+			"descriptionItems": [
+				"Crypto trading tools",
+				"Web application ASP.NET MVC + VueJS and SignalR (websockets)"
+			],
+			"img": "btc.png",
+            "screens": [
+                "adnext/adnext1.png",
+                "adnext/adnext2.png",
+                "adnext/adnext3.png"
+            ]
+		},
 		{
 			"title": "Primus Monitoring",
 			"company": {
@@ -146,6 +189,12 @@
 			"descriptionItems": [
 				"Monitoring system for industrial washing machines",
 				"Desktop and web application (WinForms, ASP.NET MVC, DotVVM)"
+			],
+			"img": "artio.png",
+			"screens": [
+				"primus/primus1.png",
+				"primus/primus2.png",
+				"primus/primus3.png"
 			]
 		},
 		{
@@ -161,40 +210,72 @@
 			"descriptionItems": [
 				"Postprocessing for Google AdWords planner",
 				"Desktop application (WPF, Material design)"
+			],
+			"img": "optimize.png",
+			"screens": [
+				"optimize/optimize1.png",
+				"optimize/optimize2.png",
+				"optimize/optimize3.png"
 			]
 		}
 	],
 
 	"projects": [
 		{
+			"title": "Bitfinex and Bitmex websocket clients",
+			"descriptionItems": [ "Websocket connectors to various crypto exchanges" ],
+			"url": "https://github.com/Marfusios/bitfinex-client-websocket",
+			"urlName": "github.com/Marfusios/bitfinex-client-websocket",
+			"img": "bitfinex.png"
+		},
+		{
+			"title": "Websocket client",
+			"descriptionItems": [ "Pure websocket client with built-in reconnection and error handling" ],
+			"url": "https://github.com/Marfusios/websocket-client",
+			"urlName": "github.com/Marfusios/websocket-client",
+			"img": "websocket.png"
+		},
+		{
 			"title": "Encryptor",
 			"descriptionItems": [ "Hobby project, the encryption app (Windows 10) for paranoid people" ],
-			"url": "https://www.microsoft.com/en-us/store/apps/mk-encryptor/9nblggh682ch"
+			"url": "https://www.microsoft.com/en-us/store/apps/mk-encryptor/9nblggh682ch",
+			"urlName": "microsoft.com/en-us/store/apps/mk-encryptor",
+			"img": "encryptor.png"
 		},
 		{
 			"title": "MKEncryptor.Core",
 			"descriptionItems": [ "Open-source encryption portable library/wrapper for C#. It is used in commercial product Encryptor (see above)." ],
-			"url": "https://github.com/Marfusios/MKEncryptor.Core"
+			"url": "https://github.com/Marfusios/MKEncryptor.Core",
+			"urlName": "github.com/Marfusios/MKEncryptor.Core",
+			"img": "lock.png"
 		},
 		{
 			"title": "MKEventAggregator",
 			"descriptionItems": [ "Open-source library. Event aggregator / Message bus for .NET with plugins system support" ],
-			"url": "https://github.com/Marfusios/MKEventAggregator"
+			"url": "https://github.com/Marfusios/MKEventAggregator",
+			"urlName": "github.com/Marfusios/MKEventAggregator",
+			"img": "event.png"
 		},
 		{
 			"title": "MKPluginsSystem",
 			"descriptionItems": [ "Example of plugins system in the .NET world" ],
-			"url": "https://github.com/Marfusios/MKPluginsSystem"
+			"url": "https://github.com/Marfusios/MKPluginsSystem",
+			"urlName": "github.com/Marfusios/MKPluginsSystem",
+			"img": "plugin.png"
 		},
 		{
 			"title": "Super Maze",
 			"descriptionItems": [ "Multiplatform game. It's created with the MonoGame framework (Open Source version of the XNA)" ],
-			"url": "http://apps.microsoft.com/windows/app/super-maze/87034b7a-9412-4edb-8851-f5244f413062"
+			"url": "http://apps.microsoft.com/windows/app/super-maze/87034b7a-9412-4edb-8851-f5244f413062",
+			"urlName": "apps.microsoft.com/windows/app/super-maze",
+			"img": "maze.png"
 		},
         {
             "title": "Issues of acquiring client data with touch-based interfaces",
             "descriptionItems": [ "Bachelor thesis", "Implementing touch-based web client for existing hospital IS" ],
-            "url": "http://is.muni.cz/th/395971/fi_b/"
+            "url": "http://is.muni.cz/th/395971/fi_b/",
+			"urlName": "is.muni.cz/th/395971/fi_b/",
+			"img": "medical.png"
         }
 	],
     

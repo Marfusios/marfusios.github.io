@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I am a passionate pragmatic software developer/craftsman from Czech Republic, this is my CV.">
     <meta name="keywords" content="Mariusz Kotas, CV, personal page, developer, craftsman, pragmatic, programmer, programming, software developer, engineer, craftsmanship, agile, lean, upwork, freelancer">
-    <meta http-equiv="last-modified" content="2017-01-19">
+    <meta http-equiv="last-modified" content="2019-02-26">
     <link rel="stylesheet" type="text/css" href="dist/styles/w3.css">
     <link rel="stylesheet" type="text/css" href="dist/styles/main.css">
     <script>
@@ -25,9 +25,9 @@
       <header class="row">
         <div class="col-md-9">
           <div class="media">
-            <div class="media-left"><img id="head" src="dist/images/logo.png" itemprop="image" alt="Logo of Mariusz Kotas" class="media-object img-circle">
+            <div class="media-left"><img src="dist/images/logo.png" itemprop="image" alt="Logo of Mariusz Kotas" class="head media-object img-circle">
             </div>
-            <div class="media-left"><img id="head" src="dist/images/head.png" itemprop="image" alt="Picture of Mariusz Kotas" class="media-object img-circle">
+            <div class="media-left"><img src="dist/images/head.png" itemprop="image" alt="Picture of Mariusz Kotas" class="head media-object img-circle">
             </div>
             <div class="media-body">
               <h1 id="name" itemprop="name"><span itemprop="givenName">Mariusz</span> <span itemprop="familyName">Kotas</span>
@@ -59,7 +59,7 @@
               <li>Clean, pragmatic codebase</li>
               <li>SOLID principles, TDD, design patterns</li>
               <li>DDD, CQRS, Event sourcing</li>
-              <li>Microservices, REST, Service bus (MassTransit, RabbitMQ)</li>
+              <li>Microservices, REST, gRPC</li>
             </ul>
           </div>
           <div class="skillGroup col-lg-3 col-md-4 col-sm-6">
@@ -67,37 +67,39 @@
             <ul>
               <li>Perfect knowledge of C#</li>
               <li>WPF, Windows Forms, ASP.NET MVC, WebAPI, UWP/WinRT</li>
-              <li>Npgsql, Entity Framework</li>
-              <li>Experience with DI containers (Unity, SimpleInjector, etc.), DevExpress, NUnit, xUnit, NuGet and ReSharper</li>
+              <li>Entity Framework</li>
+              <li>Experience with DI containers, DevExpress, xUnit, NuGet and ReSharper</li>
               <li>SSO - OpenID, OAuth (IdentityServer3/4)</li>
-              <li>Keeping up to date with .NET Core (rtm), EF Core, ASP.NET Core and cross platform development</li>
+              <li>Keeping up to date with .NET Core, EF Core, ASP.NET Core and cross platform development</li>
             </ul>
           </div>
           <div class="skillGroup col-lg-3 col-md-4 col-sm-6">
-            <h3>Databases</h3>
+            <h3>Web frontend</h3>
             <ul>
-              <li>Good knowledge of SQL language</li>
-              <li>ER diagramming</li>
-              <li>Stored procedures in PL/SQL</li>
-              <li>Experience with PostgreSQL, Microsoft SQL Server, SQLite</li>
+              <li>Javascript, Typescript</li>
+              <li>SPA - Angular 2+, VueJS</li>
+              <li>ASP.NET MVC and WebAPI</li>
+              <li>GraphQL and REST API design</li>
             </ul>
           </div>
           <div class="skillGroup col-lg-3 col-md-4 col-sm-6">
             <h3>Other</h3>
             <ul>
-              <li>Web development - Js, Typescript, SPA (Angular2)</li>
+              <li>Good knowledge of SQL language</li>
+              <li>Experience with PostgreSQL, Microsoft SQL Server, SQLite and PL/SQL</li>
               <li>Version control - SVN, Git</li>
-              <li>Continuous integration - TeamCity, Bamboo</li>
-              <li>Agile methodology - Scrum (Jira, Confluence)</li>
+              <li>Continuous integration - TeamCity, Bamboo, Jenkins</li>
+              <li>Agile methodology - Scrum (Jira, Confluence), Kanban</li>
               <li>Experience with functional programming paradigm (Haskell and F#)</li>
               <li>Knowledge of Java, C++, Python</li>
+              <li>Bitcoin, cryptocurrencies and quantitative trading</li>
             </ul>
           </div>
         </div>
       </section>
       <section id="jobs" class="w3-card-2 w3-animate-left">
         <h2>Professional experience</h2>
-        <div class="job">
+        <div class="job"><img src="dist/images/companies/mk.png" itemprop="image" alt="Logo of IT Contractor" class="logo">
           <h3 itemprop="jobTitle">IT Contractor</h3>
           <ul itemscope itemprop="worksFor" itemtype="http://schema.org/Organization" class="subheading">
             <li class="sr-only">IT Contractor
@@ -112,7 +114,20 @@
             <li>Alza.cz a.s.</li>
           </ul>
         </div>
-        <div class="job">
+        <div class="job"><img src="dist/images/companies/manana.png" itemprop="image" alt="Logo of Co-Founder" class="logo">
+          <h3 itemprop="jobTitle">Co-Founder</h3>
+          <ul itemscope itemprop="worksFor" itemtype="http://schema.org/Organization" class="subheading">
+            <li><a href="https://manana.capital/" target="_blank" itemprop="url"><span itemprop="name">Mañana Capital</span></a>
+              <meta itemprop="telephone">
+            </li>
+            <li itemprop="address">Prague, Czech Republic</li>
+            <li><span>January 2018</span><span>&ndash;</span><span>present</span></li>
+          </ul>
+          <ul>
+            <li>A fully automated quantitative crypto trading</li>
+          </ul>
+        </div>
+        <div class="job"><img src="dist/images/companies/konica.png" itemprop="image" alt="Logo of Senior Software Developer" class="logo">
           <h3 itemprop="jobTitle">Senior Software Developer</h3>
           <ul itemscope itemprop="worksFor" itemtype="http://schema.org/Organization" class="subheading">
             <li><a href="http://bic.konicaminolta.eu/" target="_blank" itemprop="url"><span itemprop="name">Konica Minolta - Business Innovation Centre</span></a>
@@ -126,7 +141,7 @@
             <li>.NET Core, Angular 2</li>
           </ul>
         </div>
-        <div class="job">
+        <div class="job"><img src="dist/images/companies/seacomp.png" itemprop="image" alt="Logo of Software Developer" class="logo">
           <h3 itemprop="jobTitle">Software Developer</h3>
           <ul itemscope itemprop="worksFor" itemtype="http://schema.org/Organization" class="subheading">
             <li><a href="http://seacomp.cz/" target="_blank" itemprop="url"><span itemprop="name">Seacomp s.r.o.</span></a>
@@ -141,7 +156,7 @@
             <li>IS builder: framework for rapid development large information systems</li>
           </ul>
         </div>
-        <div class="job">
+        <div class="job"><img src="dist/images/companies/celebrio.jpeg" itemprop="image" alt="Logo of Software Developer (C#)" class="logo">
           <h3 itemprop="jobTitle">Software Developer (C#)</h3>
           <ul itemscope itemprop="worksFor" itemtype="http://schema.org/Organization" class="subheading">
             <li><a href="https://www.facebook.com/CelebrioSoftware" target="_blank" itemprop="url"><span itemprop="name">Celebrio Software s.r.o.</span></a>
@@ -155,9 +170,37 @@
           </ul>
         </div>
       </section>
-      <section id="jobs" class="w3-card-2 w3-animate-left">
+      <section id="freelance-jobs" class="w3-card-2 w3-animate-left">
         <h2>Freelance experience</h2>
-        <div class="job">
+        <div class="job"><img src="dist/images/companies/btc.png" itemprop="image" alt="Logo of Adnext Crypto" class="logo">
+          <h3 itemprop="jobTitle">Adnext Crypto</h3>
+          <ul itemscope itemprop="worksFor" itemtype="http://schema.org/Organization" class="subheading">
+            <li><a href="http://crypto.adsearches.net" target="_blank" itemprop="url"><span itemprop="name">Adnext Globalmedia, SL</span></a>
+              <meta itemprop="telephone">
+            </li>
+            <li><span>December 2018</span><span>&ndash;</span><span>February 2019</span></li>
+          </ul>
+          <ul>
+            <li>Crypto trading tools</li>
+            <li>Web application ASP.NET MVC + VueJS and SignalR (websockets)</li>
+          </ul>
+          <div class="slider">
+            <div class="row">
+              <div class="row__inner">
+                <div class="tile">
+                  <div class="tile_media"><img src="dist/images/projects/adnext/adnext1.png" itemprop="image" alt="Screen of Adnext Crypto" class="tile__img"></div>
+                </div>
+                <div class="tile">
+                  <div class="tile_media"><img src="dist/images/projects/adnext/adnext2.png" itemprop="image" alt="Screen of Adnext Crypto" class="tile__img"></div>
+                </div>
+                <div class="tile">
+                  <div class="tile_media"><img src="dist/images/projects/adnext/adnext3.png" itemprop="image" alt="Screen of Adnext Crypto" class="tile__img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="job"><img src="dist/images/companies/artio.png" itemprop="image" alt="Logo of Primus Monitoring" class="logo">
           <h3 itemprop="jobTitle">Primus Monitoring</h3>
           <ul itemscope itemprop="worksFor" itemtype="http://schema.org/Organization" class="subheading">
             <li><a href="http://www.artio.net/" target="_blank" itemprop="url"><span itemprop="name">Artio s.r.o.</span></a>
@@ -169,8 +212,23 @@
             <li>Monitoring system for industrial washing machines</li>
             <li>Desktop and web application (WinForms, ASP.NET MVC, DotVVM)</li>
           </ul>
+          <div class="slider">
+            <div class="row">
+              <div class="row__inner">
+                <div class="tile">
+                  <div class="tile_media"><img src="dist/images/projects/primus/primus1.png" itemprop="image" alt="Screen of Primus Monitoring" class="tile__img"></div>
+                </div>
+                <div class="tile">
+                  <div class="tile_media"><img src="dist/images/projects/primus/primus2.png" itemprop="image" alt="Screen of Primus Monitoring" class="tile__img"></div>
+                </div>
+                <div class="tile">
+                  <div class="tile_media"><img src="dist/images/projects/primus/primus3.png" itemprop="image" alt="Screen of Primus Monitoring" class="tile__img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="job">
+        <div class="job"><img src="dist/images/companies/optimize.png" itemprop="image" alt="Logo of Keyword Filter Application" class="logo">
           <h3 itemprop="jobTitle">Keyword Filter Application</h3>
           <ul itemscope itemprop="worksFor" itemtype="http://schema.org/Organization" class="subheading">
             <li><a href="https://www.0ptim1ze.com/" target="_blank" itemprop="url"><span itemprop="name">0ptim1ze lte</span></a>
@@ -182,67 +240,102 @@
             <li>Postprocessing for Google AdWords planner</li>
             <li>Desktop application (WPF, Material design)</li>
           </ul>
+          <div class="slider">
+            <div class="row">
+              <div class="row__inner">
+                <div class="tile">
+                  <div class="tile_media"><img src="dist/images/projects/optimize/optimize1.png" itemprop="image" alt="Screen of Keyword Filter Application" class="tile__img"></div>
+                </div>
+                <div class="tile">
+                  <div class="tile_media"><img src="dist/images/projects/optimize/optimize2.png" itemprop="image" alt="Screen of Keyword Filter Application" class="tile__img"></div>
+                </div>
+                <div class="tile">
+                  <div class="tile_media"><img src="dist/images/projects/optimize/optimize3.png" itemprop="image" alt="Screen of Keyword Filter Application" class="tile__img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="projects" class="w3-card-2 w3-animate-right">
         <h2>Projects &amp; publications</h2>
-        <div itemscope itemtype="http://schema.org/CreativeWork" class="project">
+        <div itemscope itemtype="http://schema.org/CreativeWork" class="project"><img src="dist/images/projects/bitfinex.png" itemprop="image" alt="Logo of Bitfinex and Bitmex websocket clients" class="logo">
+          <h3 itemprop="name">Bitfinex and Bitmex websocket clients</h3>
+          <meta itemprop="author" content="Mariusz Kotas">
+          <ul class="subheading">
+            <li><a href="https://github.com/Marfusios/bitfinex-client-websocket" target="_blank" itemprop="url">github.com/Marfusios/bitfinex-client-websocket</a></li>
+          </ul>
+          <ul class="description">
+            <li itemprop="description">Websocket connectors to various crypto exchanges</li>
+          </ul>
+        </div>
+        <div itemscope itemtype="http://schema.org/CreativeWork" class="project"><img src="dist/images/projects/websocket.png" itemprop="image" alt="Logo of Websocket client" class="logo">
+          <h3 itemprop="name">Websocket client</h3>
+          <meta itemprop="author" content="Mariusz Kotas">
+          <ul class="subheading">
+            <li><a href="https://github.com/Marfusios/websocket-client" target="_blank" itemprop="url">github.com/Marfusios/websocket-client</a></li>
+          </ul>
+          <ul class="description">
+            <li itemprop="description">Pure websocket client with built-in reconnection and error handling</li>
+          </ul>
+        </div>
+        <div itemscope itemtype="http://schema.org/CreativeWork" class="project"><img src="dist/images/projects/encryptor.png" itemprop="image" alt="Logo of Encryptor" class="logo">
           <h3 itemprop="name">Encryptor</h3>
           <meta itemprop="author" content="Mariusz Kotas">
           <ul class="subheading">
-            <li><a href="https://www.microsoft.com/en-us/store/apps/mk-encryptor/9nblggh682ch" target="_blank" itemprop="url">https://www.microsoft.com/en-us/store/apps/mk-encryptor/9nblggh682ch</a></li>
+            <li><a href="https://www.microsoft.com/en-us/store/apps/mk-encryptor/9nblggh682ch" target="_blank" itemprop="url">microsoft.com/en-us/store/apps/mk-encryptor</a></li>
           </ul>
-          <ul>
+          <ul class="description">
             <li itemprop="description">Hobby project, the encryption app (Windows 10) for paranoid people</li>
           </ul>
         </div>
-        <div itemscope itemtype="http://schema.org/CreativeWork" class="project">
+        <div itemscope itemtype="http://schema.org/CreativeWork" class="project"><img src="dist/images/projects/lock.png" itemprop="image" alt="Logo of MKEncryptor.Core" class="logo">
           <h3 itemprop="name">MKEncryptor.Core</h3>
           <meta itemprop="author" content="Mariusz Kotas">
           <ul class="subheading">
-            <li><a href="https://github.com/Marfusios/MKEncryptor.Core" target="_blank" itemprop="url">https://github.com/Marfusios/MKEncryptor.Core</a></li>
+            <li><a href="https://github.com/Marfusios/MKEncryptor.Core" target="_blank" itemprop="url">github.com/Marfusios/MKEncryptor.Core</a></li>
           </ul>
-          <ul>
+          <ul class="description">
             <li itemprop="description">Open-source encryption portable library/wrapper for C#. It is used in commercial product Encryptor (see above).</li>
           </ul>
         </div>
-        <div itemscope itemtype="http://schema.org/CreativeWork" class="project">
+        <div itemscope itemtype="http://schema.org/CreativeWork" class="project"><img src="dist/images/projects/event.png" itemprop="image" alt="Logo of MKEventAggregator" class="logo">
           <h3 itemprop="name">MKEventAggregator</h3>
           <meta itemprop="author" content="Mariusz Kotas">
           <ul class="subheading">
-            <li><a href="https://github.com/Marfusios/MKEventAggregator" target="_blank" itemprop="url">https://github.com/Marfusios/MKEventAggregator</a></li>
+            <li><a href="https://github.com/Marfusios/MKEventAggregator" target="_blank" itemprop="url">github.com/Marfusios/MKEventAggregator</a></li>
           </ul>
-          <ul>
+          <ul class="description">
             <li itemprop="description">Open-source library. Event aggregator / Message bus for .NET with plugins system support</li>
           </ul>
         </div>
-        <div itemscope itemtype="http://schema.org/CreativeWork" class="project">
+        <div itemscope itemtype="http://schema.org/CreativeWork" class="project"><img src="dist/images/projects/plugin.png" itemprop="image" alt="Logo of MKPluginsSystem" class="logo">
           <h3 itemprop="name">MKPluginsSystem</h3>
           <meta itemprop="author" content="Mariusz Kotas">
           <ul class="subheading">
-            <li><a href="https://github.com/Marfusios/MKPluginsSystem" target="_blank" itemprop="url">https://github.com/Marfusios/MKPluginsSystem</a></li>
+            <li><a href="https://github.com/Marfusios/MKPluginsSystem" target="_blank" itemprop="url">github.com/Marfusios/MKPluginsSystem</a></li>
           </ul>
-          <ul>
+          <ul class="description">
             <li itemprop="description">Example of plugins system in the .NET world</li>
           </ul>
         </div>
-        <div itemscope itemtype="http://schema.org/CreativeWork" class="project">
+        <div itemscope itemtype="http://schema.org/CreativeWork" class="project"><img src="dist/images/projects/maze.png" itemprop="image" alt="Logo of Super Maze" class="logo">
           <h3 itemprop="name">Super Maze</h3>
           <meta itemprop="author" content="Mariusz Kotas">
           <ul class="subheading">
-            <li><a href="http://apps.microsoft.com/windows/app/super-maze/87034b7a-9412-4edb-8851-f5244f413062" target="_blank" itemprop="url">http://apps.microsoft.com/windows/app/super-maze/87034b7a-9412-4edb-8851-f5244f413062</a></li>
+            <li><a href="http://apps.microsoft.com/windows/app/super-maze/87034b7a-9412-4edb-8851-f5244f413062" target="_blank" itemprop="url">apps.microsoft.com/windows/app/super-maze</a></li>
           </ul>
-          <ul>
+          <ul class="description">
             <li itemprop="description">Multiplatform game. It's created with the MonoGame framework (Open Source version of the XNA)</li>
           </ul>
         </div>
-        <div itemscope itemtype="http://schema.org/CreativeWork" class="project">
+        <div itemscope itemtype="http://schema.org/CreativeWork" class="project"><img src="dist/images/projects/medical.png" itemprop="image" alt="Logo of Issues of acquiring client data with touch-based interfaces" class="logo">
           <h3 itemprop="name">Issues of acquiring client data with touch-based interfaces</h3>
           <meta itemprop="author" content="Mariusz Kotas">
           <ul class="subheading">
-            <li><a href="http://is.muni.cz/th/395971/fi_b/" target="_blank" itemprop="url">http://is.muni.cz/th/395971/fi_b/</a></li>
+            <li><a href="http://is.muni.cz/th/395971/fi_b/" target="_blank" itemprop="url">is.muni.cz/th/395971/fi_b/</a></li>
           </ul>
-          <ul>
+          <ul class="description">
             <li itemprop="description">Bachelor thesis</li>
             <li itemprop="description">Implementing touch-based web client for existing hospital IS</li>
           </ul>
@@ -276,7 +369,7 @@
           </ul>
         </div>
       </section>
-      <section id="languages" class="w3-card-2 w3-animate-right">
+      <section id="books" class="w3-card-2 w3-animate-right">
         <h2>Favorite books</h2>
         <div class="language">
           <ul>
@@ -287,7 +380,7 @@
         </div>
       </section>
       <footer>
-        <p>Last modified on 2017-01-19.</p>
+        <p>Last modified on 2019-02-26.</p>
       </footer>
     </div>
   </body>
