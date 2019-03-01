@@ -2,31 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f7f076-b3ca-4dfa-8166-a7ce7d371c2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/companies/artio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/companies/btc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/companies/celebrio.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/companies/konica.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/companies/konica.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/companies/manana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/companies/mk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/companies/optimize.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/companies/seacomp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/adnext/adnext1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/adnext/adnext2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/adnext/adnext3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/encryptor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/event.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/lock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/maze.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/medical.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/optimize/optimize1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/optimize/optimize2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/optimize/optimize3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/plugin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/primus/primus1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/primus/primus2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/projects/primus/primus3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/main.less" afterDir="false" />
@@ -46,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
-              <caret line="146" column="39" lean-forward="true" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+              <caret line="146" column="39" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -54,8 +29,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+            <state relative-caret-position="194">
+              <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="948">
+              <caret line="213" selection-start-line="213" selection-end-line="213" />
             </state>
           </provider>
         </entry>
@@ -63,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/bootstrap.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="192" column="38" lean-forward="true" selection-start-line="192" selection-start-column="38" selection-end-line="192" selection-end-column="38" />
+            <state relative-caret-position="3264">
+              <caret line="192" column="38" selection-start-line="192" selection-start-column="38" selection-end-line="192" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -105,6 +89,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,7 +135,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,8 +146,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\dev\repos\marfusios.github.io\src\images" />
       <recent name="C:\dev\repos\marfusios.github.io\dist\images" />
+      <recent name="C:\dev\repos\marfusios.github.io\src\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -191,11 +175,12 @@
       <workItem from="1551195771900" duration="10244000" />
       <workItem from="1551432361448" duration="51000" />
       <workItem from="1551444419627" duration="1089000" />
+      <workItem from="1551445619227" duration="519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11384000" />
+    <option name="totallyTimeSpent" value="11903000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -208,8 +193,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1315" y="0" width="2132" height="1407" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18815663" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18815663" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -222,7 +208,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -260,31 +246,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/index.jade">
+    <entry file="file://$PROJECT_DIR$/src/styles/bootstrap.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3621">
-          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        <state relative-caret-position="3264">
+          <caret line="192" column="38" selection-start-line="192" selection-start-column="38" selection-end-line="192" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
-          <caret line="146" column="39" lean-forward="true" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+          <caret line="146" column="39" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/bootstrap.less">
+    <entry file="file://$PROJECT_DIR$/src/templates/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="192" column="38" lean-forward="true" selection-start-line="192" selection-start-column="38" selection-end-line="192" selection-end-column="38" />
+        <state relative-caret-position="948">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+        <state relative-caret-position="194">
+          <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
         </state>
       </provider>
     </entry>

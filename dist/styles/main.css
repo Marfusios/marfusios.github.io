@@ -3665,12 +3665,15 @@ section#jobs h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
+section#freelance-jobs {
+  z-index: 1;
+}
 section#freelance-jobs h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
 section#projects {
-  z-index: -1;
+  z-index: 0;
 }
 section#projects h2 {
   margin-top: 0;
@@ -3839,7 +3842,6 @@ footer p {
   -webkit-transform: scale(3.5);
   transform: scale(3.5);
   opacity: 1;
-  /*    z-index: 1000;*/
 }
 @media (max-width: 991px) {
   .slider .row__inner:hover .tile:hover {
