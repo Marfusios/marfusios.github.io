@@ -260,7 +260,7 @@ hr {
   margin-top: 25.71428572px;
   margin-bottom: 25.71428572px;
   border: 0;
-  border-top: 1px solid #add6ec;
+  border-top: 1px solid #eeba2b;
 }
 .sr-only {
   position: absolute;
@@ -327,7 +327,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #389bd2;
+  color: #eeba2b;
 }
 h1,
 .h1,
@@ -447,7 +447,7 @@ mark,
   text-transform: capitalize;
 }
 .text-muted {
-  color: #389bd2;
+  color: #eeba2b;
 }
 .text-primary {
   color: #de5914;
@@ -513,7 +513,7 @@ a.bg-danger:hover {
 .page-header {
   padding-bottom: 11.85714286px;
   margin: 51.42857144px 0 25.71428572px;
-  border-bottom: 1px solid #add6ec;
+  border-bottom: 1px solid #eeba2b;
 }
 ul,
 ol {
@@ -571,7 +571,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #389bd2;
+  border-bottom: 1px dotted #eeba2b;
 }
 .initialism {
   font-size: 90%;
@@ -581,7 +581,7 @@ blockquote {
   padding: 12.85714286px 25.71428572px;
   margin: 0 0 25.71428572px;
   font-size: 22.5px;
-  border-left: 5px solid #add6ec;
+  border-left: 5px solid #eeba2b;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -594,7 +594,7 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.42857143;
-  color: #389bd2;
+  color: #eeba2b;
 }
 blockquote footer:before,
 blockquote small:before,
@@ -605,7 +605,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #add6ec;
+  border-right: 5px solid #eeba2b;
   border-left: 0;
   text-align: right;
 }
@@ -665,7 +665,7 @@ pre {
   line-height: 1.42857143;
   word-break: break-all;
   word-wrap: break-word;
-  color: #184c69;
+  color: #876720;
   background-color: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 4px;
@@ -3496,7 +3496,7 @@ ul {
 }
 a {
   text-decoration: none;
-  border-bottom: 2px solid #389bd2;
+  border-bottom: 2px solid #eeba2b;
 }
 a:hover {
   border-bottom-color: #051016;
@@ -3601,14 +3601,14 @@ header #profileBadges {
 header #profileBadges a {
   border-bottom: none;
   margin-left: .75em;
-  color: #389bd2;
+  color: #eeba2b;
 }
 header #profileBadges a:hover {
   color: #051016;
 }
 .subheading {
   font-size: 15.3px;
-  color: #2575a1;
+  color: #876720;
   list-style: none;
   margin: -25.71428572px 0 -25.71428572px 1px;
 }
@@ -3642,6 +3642,9 @@ header #profileBadges a:hover {
 }
 .subheading:after {
   clear: both;
+}
+.subheading:hover {
+  color: #051016;
 }
 section p {
   text-align: justify;
@@ -3721,10 +3724,10 @@ section .description {
   font-style: italic;
 }
 footer {
-  border-top: 1px solid #add6ec;
+  border-top: 1px solid #eeba2b;
   padding: 25.71428572px 0;
   margin: 51.42857144px 0;
-  color: #389bd2;
+  color: #eeba2b;
   font-style: italic;
 }
 footer p {
