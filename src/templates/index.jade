@@ -224,7 +224,8 @@ html(lang="en")
                     each item in job.screens
                       .tile
                         .tile_media
-                          img.tile__img(src='dist/images/projects/#{item}' itemprop='image' alt='Screen of #{job.title}')
+                          a(href='dist/images/projects/#{item}' target='_blank')
+                            img.tile__img(src='dist/images/projects/#{item}' itemprop='image' alt='Screen of #{job.title}')
 
       //- Projects & publications
       section#projects.w3-card-2.w3-animate-right

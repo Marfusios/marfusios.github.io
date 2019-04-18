@@ -1,5 +1,5 @@
 {
-	"lastModified": "March 4, 2019",
+	"lastModified": "April 18, 2019",
 
 	"name": "Mariusz Kotas",
 	"givenName": "Mariusz",
@@ -177,6 +177,26 @@
 				"nexus/nexus3.png"
 			]
 		},
+        {
+          "title": "TraXBot",
+          "company": {
+            "name": "Mañana Capital",
+            "url": "https://manana.capital"
+          },
+          "time": {
+            "from": "2018",
+            "to": "2019"
+          },
+          "descriptionItems": [
+            "Fast and optimized execution platform for our high-frequency trading (HFT) strategies",
+            "Reactive platform based on .NET core and Rx"
+          ],
+          "img": "manana_black.png",
+          "screens": [
+            "traxbot/traxbot1.png",
+            "traxbot/traxbot2.png"
+          ]
+        },
 		{
 			"title": "Adnext Crypto",
 			"company": {
@@ -244,8 +264,11 @@
 
 	"projects": [
 		{
-			"title": "Bitfinex and Bitmex websocket clients",
-			"descriptionItems": [ "Websocket connectors to various crypto exchanges" ],
+			"title": "Crypto websocket clients",
+			"descriptionItems": [
+				"Websocket connectors to various crypto exchanges",
+				"Bitfinex, Bitmex and Binance"
+			],
 			"url": "https://github.com/Marfusios/bitfinex-client-websocket",
 			"urlName": "github.com/Marfusios/bitfinex-client-websocket",
 			"img": "bitfinex.png"

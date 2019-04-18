@@ -39,7 +39,7 @@ var paths = {
     copyFontsDest: './dist/third-party',
     copyFontsClean: './dist/third-party',
     
-    copyImagesSrc: './src/images/*',
+    copyImagesSrc: './src/images/**/*',
     copyImagesDest: './dist/images',
     copyImagesClean: './dist/images',
     
