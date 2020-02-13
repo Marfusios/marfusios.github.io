@@ -3772,7 +3772,7 @@ footer p {
   display: inline-block;
   width: 250px;
   height: 140.625px;
-  margin-right: 20px;
+  margin-right: 10px;
   font-size: 20px;
   cursor: pointer;
   transition: 450ms all;
@@ -3834,26 +3834,31 @@ footer p {
   bottom: 0;
   padding: 10px;
 }
-@media (min-width: 1199px) {
-  .slider .row__inner:hover {
-    -webkit-transform: translate3d(-62.5px, 0, 0);
-    transform: translate3d(-62.5px, 0, 0);
-  }
-  .slider .row__inner:hover .tile {
-    opacity: 0.1;
-  }
+.slider .row__inner:hover {
+  -webkit-transform: translate3d(-62.5px, 0, 0);
+  transform: translate3d(-62.5px, 0, 0);
+}
+.slider .row__inner:hover .tile {
+  opacity: 0.1;
+}
+.slider .row__inner:hover .tile:hover {
+  -webkit-transform: scale(3.5);
+  transform: scale(3.5);
+  opacity: 1;
+}
+@media (max-width: 991px) {
   .slider .row__inner:hover .tile:hover {
-    -webkit-transform: scale(3.5);
-    transform: scale(3.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
     opacity: 1;
   }
-  .slider .tile:hover ~ .tile {
-    -webkit-transform: translate3d(125px, 0, 0);
-    transform: translate3d(125px, 0, 0);
-  }
-  .slider .tile__img:hover {
-    width: unset;
-  }
+}
+.slider .tile:hover ~ .tile {
+  -webkit-transform: translate3d(125px, 0, 0);
+  transform: translate3d(125px, 0, 0);
+}
+.slider .tile__img:hover {
+  width: unset;
 }
 
 /*# sourceMappingURL=main.css.map */
