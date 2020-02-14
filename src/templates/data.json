@@ -24,8 +24,9 @@
 		"medium": "https://medium.com/@marfusios"
 	},
 
-	"summary": "I am a passionate pragmatic software developer from Czech Republic who is continuously improving software craftsmanship.",
-	"summary2": "I'm putting emphasis on a software quality and clean code. I'm interested in the enterprise software development and I have great expertise in all .NET technologies.",
+	"summary": "Passionate pragmatic software developer from Czech Republic who is continuously improving software craftsmanship.",
+	"summary2": "I'm an independent software freelancer/consultant. Don't hesitate to contact me if you have a custom solution you would like me to implement.",
+	"summary3": "I'm putting emphasis on a software quality and clean code. Interested in helping clients with their domain, focusing on solving their problems. \nI have great expertise in all .NET technologies.",
 
 	"skillGroups": [
         {
