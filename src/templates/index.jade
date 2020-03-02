@@ -128,6 +128,8 @@ html(lang="en")
           //- Job
           .job
 
+            each imgE in job.imgExtra
+              img.logo(src='dist/images/companies/#{imgE}' itemprop='image' alt='Logo of #{job.title}')
             img.logo(src='dist/images/companies/#{job.img}' itemprop='image' alt='Logo of #{job.title}')
 
             //- Title
@@ -170,7 +172,11 @@ html(lang="en")
             //- Description
             ul
               each item in job.descriptionItems
-                li=item
+                if (Array.isArray(item))
+                  li
+                    a(href=item[1] target='_blank' itemprop='url')=item[0]
+                else
+                  li=item
 
       //- Freelance experience
       section#freelance-jobs.w3-card-2.w3-animate-left
@@ -221,6 +227,10 @@ html(lang="en")
 
             //- Description
             ul
+              if (job.company && job.company.urlStudy)
+                li
+                  a(href=job.company.urlStudy target='_blank', itemprop='url')
+                    span='Case study'
               each item in job.descriptionItems
                 li=item
 
@@ -257,10 +267,17 @@ html(lang="en")
                 li
                   a(href=project.url target='_blank' itemprop='url')=project.urlName
 
+
+
             //- Description
             ul.description
+              if (project.badges)
+                each badge in project.badges
+                    span!=badge
               each item in project.descriptionItems
                 li(itemprop='description')=item
+
+
 
       //- Education
       section#education.w3-card-2.w3-animate-left

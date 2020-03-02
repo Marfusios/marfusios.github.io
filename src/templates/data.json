@@ -82,10 +82,12 @@
 				"to": "present"
 			},
 			"descriptionItems": [
-				"Flexiana s.r.o.",
-				"Alza.cz a.s."
+				"Freelance jobs",
+				["Flexiana s.r.o.", "https://flexiana.com"],
+				["Alza.cz a.s.", "https://www.alzashop.com"]
 			],
-			"img": "mk.png"
+			"img": "mk.png",
+			"imgExtra": ["alza.png", "flexiana.png"]
 		},
 		{
 			"title": "Co-Founder",
@@ -101,7 +103,8 @@
 			"descriptionItems": [
 				"A fully automated quantitative crypto trading"
 			],
-			"img": "manana.png"
+			"img": "manana.png",
+			"imgExtra": []
 		},
 		{
 			"title": "Senior Software Developer",
@@ -118,7 +121,8 @@
 				"Innovative projects",
 				".NET Core, Angular 2"
 			],
-			"img": "konica.png"
+			"img": "konica.png",
+			"imgExtra": []
 		},
 		{
 			"title": "Software Developer",
@@ -136,7 +140,8 @@
 				"Chemical process simulator",
 				"IS builder: framework for rapid development large information systems"
 			],
-			"img": "seacomp.png"
+			"img": "seacomp.png",
+			"imgExtra": []
 		},
 		{
 			"title": "Software Developer (C#)",
@@ -152,11 +157,32 @@
 			"descriptionItems": [
 				"Operating system for pensioner"
 			],
-			"img": "celebrio.jpeg"
+			"img": "celebrio.jpeg",
+			"imgExtra": []
 		}
 	],
 
 	"jobsFreelance": [
+		{
+			"title": "ERP system",
+			"company": {
+				"name": "Alza.cz a.s.",
+				"url": "https://alza.cz",
+				"urlStudy": "https://flexiana.com/2020/02/case-study-e-commerce-information-system"
+			},
+			"time": {
+				"from": "2017",
+				"to": "2020"
+			},
+			"descriptionItems": [
+				"Gigantic ERP system (150+ modules)",
+				"Microservices, horizontal scalability, greenfield project",
+				"Kubernetes, Linkerd, .NET Core, Angular, GraphQL, gRPC"
+			],
+			"img": "alza.png",
+            "screens": [
+            ]
+		},
 		{
 			"title": "Nexus",
 			"company": {
@@ -165,7 +191,7 @@
 			},
 			"time": {
 				"from": "2018",
-				"to": "2019"
+				"to": "2020"
 			},
 			"descriptionItems": [
 				"Back-office system",
@@ -187,7 +213,7 @@
           },
           "time": {
             "from": "2018",
-            "to": "2019"
+            "to": "2020"
           },
           "descriptionItems": [
             "Fast and optimized execution platform for our high-frequency trading (HFT) strategies",
@@ -207,7 +233,7 @@
 			},
 			"time": {
 				"from": "December 2018",
-				"to": "February 2019"
+				"to": "March 2020"
 			},
 			"descriptionItems": [
 				"Crypto trading tools",
@@ -266,6 +292,17 @@
 
 	"projects": [
 		{
+			"title": "Websocket client",
+			"descriptionItems": [ "Pure websocket client with built-in reconnection and error handling" ],
+			"url": "https://github.com/Marfusios/websocket-client",
+			"urlName": "github.com/Marfusios/websocket-client",
+			"img": "websocket.png",
+			"badges": [
+				"<a class=\"badge-link\" href=\"https://github.com/Marfusios/websocket-client\" target=\"_blank\"> <img class=\"badge\" alt=\"GitHub stars\" src=\"https://img.shields.io/github/stars/marfusios/websocket-client?style=for-the-badge&color=e8ae0d\"></a>",
+				"<a class=\"badge-link\" href=\"https://www.nuget.org/packages/Websocket.Client\" target=\"_blank\"> <img class=\"badge\" alt=\"Nuget\" src=\"https://img.shields.io/nuget/dt/Websocket.Client?style=for-the-badge&color=e8ae0d\"></a>"
+			]
+		},
+		{
 			"title": "Crypto websocket clients",
 			"descriptionItems": [
 				"Websocket connectors to various crypto exchanges",
@@ -273,14 +310,11 @@
 			],
 			"url": "https://github.com/Marfusios/bitfinex-client-websocket",
 			"urlName": "github.com/Marfusios/bitfinex-client-websocket",
-			"img": "bitfinex.png"
-		},
-		{
-			"title": "Websocket client",
-			"descriptionItems": [ "Pure websocket client with built-in reconnection and error handling" ],
-			"url": "https://github.com/Marfusios/websocket-client",
-			"urlName": "github.com/Marfusios/websocket-client",
-			"img": "websocket.png"
+			"img": "bitfinex.png",
+			"badges": [
+				"<a class=\"badge-link\" href=\"https://github.com/Marfusios/bitfinex-client-websocket\" target=\"_blank\"> <img class=\"badge\" alt=\"GitHub stars\" src=\"https://img.shields.io/github/stars/marfusios/bitfinex-client-websocket?style=for-the-badge&color=e8ae0d\"></a>",
+				"<a class=\"badge-link\" href=\"https://www.nuget.org/packages/Bitfinex.Client.Websocket\" target=\"_blank\"> <img class=\"badge\" alt=\"Nuget\" src=\"https://img.shields.io/nuget/dt/Bitfinex.Client.Websocket?style=for-the-badge&color=e8ae0d\"></a>"
+			]
 		},
 		{
 			"title": "Encryptor",

@@ -3524,6 +3524,13 @@ h3 {
   padding: 20px 20px 1px 20px;
   margin-top: 40px;
 }
+.badge {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.badge-link {
+  border: none;
+}
 header {
   padding: 25.71428572px 0;
 }
