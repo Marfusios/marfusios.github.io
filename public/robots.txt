@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /.well-known/
 
 Sitemap: https://mkotas.cz/sitemap.xml

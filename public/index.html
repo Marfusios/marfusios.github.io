@@ -2,30 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Mariusz Kotas - Product builder · Solopreneur</title>
+  <title>Mariusz Kotas — Product builder & Solopreneur in Prague</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mariusz Kotas - product builder and solopreneur. A decade in distributed systems; now independent, focused on Bitcoin, Lightning, algorithmic trading and applied AI.">
-  <meta name="keywords" content="Mariusz Kotas, product builder, solopreneur, software engineer, Bitcoin, Lightning, algorithmic trading, applied AI, machine learning, Prague">
+  <meta name="description" content="Mariusz Kotas — independent product builder and solopreneur in Prague. A decade in large distributed systems; now focused on Bitcoin, Lightning, algorithmic trading and applied AI.">
   <meta name="author" content="Mariusz Kotas">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
   <link rel="canonical" href="https://mkotas.cz/">
 
-  <meta property="og:type" content="website">
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
   <meta property="og:url" content="https://mkotas.cz/">
-  <meta property="og:title" content="Mariusz Kotas - Product builder · Solopreneur">
-  <meta property="og:description" content="A decade of building large distributed systems; now independent, working on Bitcoin, Lightning, algorithmic trading and applied AI.">
+  <meta property="og:title" content="Mariusz Kotas — Product builder & Solopreneur">
+  <meta property="og:description" content="Independent product builder. A decade in distributed systems; now focused on Bitcoin, Lightning, algorithmic trading and applied AI.">
   <meta property="og:image" content="https://mkotas.cz/images/logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="MK monogram — Mariusz Kotas">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="mkotas.cz">
+  <meta property="profile:first_name" content="Mariusz">
+  <meta property="profile:last_name" content="Kotas">
+  <meta property="profile:username" content="Marfusios">
 
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Mariusz Kotas - Product builder · Solopreneur">
-  <meta name="twitter:description" content="A decade of building large distributed systems; now independent, working on Bitcoin, Lightning, algorithmic trading and applied AI.">
+  <meta name="twitter:title" content="Mariusz Kotas — Product builder & Solopreneur">
+  <meta name="twitter:description" content="Independent product builder. A decade in distributed systems; now focused on Bitcoin, Lightning, algorithmic trading and applied AI.">
   <meta name="twitter:image" content="https://mkotas.cz/images/logo.png">
+  <meta name="twitter:image:alt" content="MK monogram — Mariusz Kotas">
 
   <meta name="theme-color" content="#0B1A2E">
 
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- IndieWeb: declare the URLs that represent me -->
+  <link rel="me" href="https://github.com/Marfusios">
+  <link rel="me" href="https://cz.linkedin.com/in/marfusios">
+  <link rel="me" href="https://stackoverflow.com/users/3458747/marfu">
+  <link rel="me" href="https://medium.com/@marfusios">
+  <link rel="me" href="mailto:m@mkotas.cz">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,23 +56,72 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mariusz Kotas",
-    "givenName": "Mariusz",
-    "familyName": "Kotas",
-    "jobTitle": "Product builder · Solopreneur",
-    "url": "https://mkotas.cz",
-    "email": "m@mkotas.cz",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Prague",
-      "addressCountry": "Czech Republic"
-    },
-    "sameAs": [
-      "https://github.com/Marfusios",
-      "https://cz.linkedin.com/in/marfusios",
-      "https://stackoverflow.com/users/3458747/marfu",
-      "https://medium.com/@marfusios"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mkotas.cz/#website",
+        "url": "https://mkotas.cz/",
+        "name": "Mariusz Kotas",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://mkotas.cz/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://mkotas.cz/#profile",
+        "url": "https://mkotas.cz/",
+        "isPartOf": { "@id": "https://mkotas.cz/#website" },
+        "about": { "@id": "https://mkotas.cz/#person" },
+        "primaryImageOfPage": "https://mkotas.cz/images/head.png"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mkotas.cz/#person",
+        "name": "Mariusz Kotas",
+        "givenName": "Mariusz",
+        "familyName": "Kotas",
+        "jobTitle": "Product builder · Solopreneur",
+        "description": "Independent product builder. A decade in large distributed systems; now focused on Bitcoin, Lightning, algorithmic trading and applied AI.",
+        "url": "https://mkotas.cz/",
+        "image": "https://mkotas.cz/images/head.png",
+        "email": "m@mkotas.cz",
+        "knowsLanguage": ["en", "cs", "pl"],
+        "knowsAbout": [
+          "Bitcoin",
+          "Lightning Network",
+          "Algorithmic trading",
+          "Quantitative trading",
+          "Machine learning",
+          "Applied AI",
+          "Distributed systems",
+          ".NET",
+          "TypeScript",
+          "Python"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Prague",
+          "addressCountry": "CZ"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Masaryk University, Faculty of Informatics",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Brno",
+            "addressCountry": "CZ"
+          }
+        },
+        "worksFor": [
+          { "@type": "Organization", "name": "Mitil", "url": "https://www.mitil.net/" },
+          { "@type": "Organization", "name": "Mañana Capital", "url": "https://manana.capital/" }
+        ],
+        "sameAs": [
+          "https://github.com/Marfusios",
+          "https://cz.linkedin.com/in/marfusios",
+          "https://stackoverflow.com/users/3458747/marfu",
+          "https://medium.com/@marfusios"
+        ]
+      }
     ]
   }
   </script>
@@ -63,11 +131,11 @@
        HEADER
        ============================================================ -->
   <header class="site-header">
-    <a href="#top" class="brand">
-      <img src="images/logo.png" alt="MK">
+    <a href="#top" class="brand" aria-label="Mariusz Kotas — Home">
+      <img src="images/logo.png" alt="" width="32" height="32" decoding="async">
       <span>Mariusz Kotas</span>
     </a>
-    <nav>
+    <nav aria-label="Primary">
       <a href="#about">About</a>
       <a href="#now">Now</a>
       <a href="#projects">Projects</a>
@@ -75,6 +143,8 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
+  <main>
 
   <!-- ============================================================
        HERO
@@ -125,8 +195,8 @@
       </div>
     </div>
     <div class="hero-portrait-wrap">
-      <img class="hero-portrait" src="images/head.png" alt="Mariusz Kotas">
-      <div class="hero-monogram"><img src="images/logo.png" alt=""></div>
+      <img class="hero-portrait" src="images/head.png" alt="Portrait of Mariusz Kotas" width="240" height="240" fetchpriority="high">
+      <div class="hero-monogram"><img src="images/logo.png" alt="" width="56" height="56" decoding="async"></div>
     </div>
   </section>
 
@@ -547,12 +617,14 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ============================================================
        FOOTER
        ============================================================ -->
   <footer class="site-footer">
     <div class="foot-left">
-      <img src="images/logo.png" alt="MK">
+      <img src="images/logo.png" alt="" width="36" height="36" loading="lazy" decoding="async">
       <div>
         <div class="foot-name">Mariusz Kotas</div>
         <div class="foot-meta">Prague, Czech Republic · m@mkotas.cz</div>
