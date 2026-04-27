@@ -1,27 +1,70 @@
-# marfusios.github.io
+# mkotas.cz — Personal site
 
-**Personal page (CV).**
+Personal site for Mariusz Kotas. Static HTML/CSS/JS, deployed to Cloudflare Workers (Static Assets).
 
-Built using following libraries:
+## Stack
 
-- [Adobe Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) (primary typeface)
-- [Font Awesome](https://github.com/FortAwesome/Font-Awesome) (icon typeface)
-- [LESS](https://github.com/less/less.js) (for stylesheets)
-- [Bootstrap](https://github.com/twbs/bootstrap) (customized, used for grids and CSS reset)
-- [Jade](https://github.com/jadejs/jade) (for templates)
-- [Bower](https://github.com/bower/bower) (for packages)
-- [Gulp](https://github.com/gulpjs/gulp) (as build system)
-	- Kudos to all these amazing plugins:
-		- [main-bower-files](https://github.com/ck86/main-bower-files)
-		- [gulp-plumber](https://github.com/floatdrop/gulp-plumber)
-		- [gulp-less](https://github.com/plus3network/gulp-less)
-		- [gulp-notify](https://github.com/mikaelbr/gulp-notify)
-		- [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps)
-		- [gulp-minify-css](https://github.com/jonathanepollack/gulp-minify-css)
-		- [gulp-rimraf](https://github.com/robrich/gulp-rimraf)
-		- [gulp-jade](https://github.com/phated/gulp-jade)
-		- [gulp-data](https://github.com/colynb/gulp-data)
-		- [gulp-livereload](https://github.com/vohof/gulp-livereload)
-- [schema.org](http://schema.org/) (for semantics through Microdata) 
+- Plain HTML / CSS / JS — no build step
+- Fonts via Google Fonts (Inter, Fraunces, JetBrains Mono)
+- Cloudflare Workers Static Assets for hosting
+- Wrangler CLI for dev and deploy
 
-M. Kotas
+## Commands
+
+```bash
+npm install     # Install wrangler
+npm run dev     # Local dev server (wrangler dev)
+npm run deploy  # Deploy to Cloudflare (wrangler deploy)
+```
+
+## Structure
+
+```
+public/                     # All deployable static files
+  index.html
+  favicon.ico
+  robots.txt
+  sitemap.xml
+  styles/
+    colors-and-type.css     # Design tokens
+    styles.css              # Layout + components
+  scripts/
+    main.js                 # Header scroll, project tabs, copy email
+  images/
+    logo.png                # MK monogram
+    head.png                # Portrait
+    maze-pattern.png        # Background texture
+  .well-known/              # Preserved Let's Encrypt artifact
+
+wrangler.jsonc              # Cloudflare Workers config (assets dir = ./public)
+package.json                # Wrangler dev dep + scripts
+```
+
+## Design
+
+A single long-scroll page:
+
+1. Sticky header
+2. Hero (portrait + intro)
+3. About (bio + facts panel)
+4. Now (Mitil + day-to-day focus)
+5. Projects (tabbed: Open source / Products & ventures)
+6. Experience (timeline on dark navy)
+7. Contact (email + copy-to-clipboard + socials)
+8. Footer
+
+Design tokens live in `public/styles/colors-and-type.css`. Layout in `public/styles/styles.css`.
+
+Colors: navy + gold + warm paper neutrals (~70% neutral / 25% navy / 5% gold).
+Typography: Fraunces (display), Inter (body), JetBrains Mono (code/locations).
+
+## Deploy
+
+Cloudflare Workers Static Assets:
+
+```bash
+npm install
+npm run deploy
+```
+
+Configure the custom domain (`mkotas.cz`) in the Cloudflare dashboard once the worker is deployed.

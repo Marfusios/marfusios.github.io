@@ -1,7 +1,11 @@
-# Packages
-node_modules/
-bower_components/
-src/third-party/
+node_modules
+.DS_Store
+*.local
+.env
+.env.*
 
-# Cloud9 IDE
-.c9/
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
