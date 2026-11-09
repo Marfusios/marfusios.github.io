@@ -1,0 +1,9 @@
+# Homepage copies from before the static-site redesign.
+/index%202.html / 301
+/index%203.html / 301
+/index.html / 301
+/index / 301
+
+# Images moved out of dist/ during the redesign.
+/dist/images/head.png /images/head.png 301
+/dist/images/logo.png /images/logo.png 301

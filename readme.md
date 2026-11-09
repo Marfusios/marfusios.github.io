@@ -68,3 +68,15 @@ npm run deploy
 ```
 
 Configure the custom domain (`mkotas.cz`) in the Cloudflare dashboard once the worker is deployed.
+
+## URL migrations
+
+`public/_redirects` preserves the old `index 2.html` and `index 3.html` homepage
+copies and the portrait/logo paths used before the redesign. These are exact
+permanent redirects to their current equivalents. Unknown URLs still return a
+real 404; do not redirect every missing page to the homepage.
+
+Keep `https://mkotas.cz/` as the canonical homepage. `src/worker.js` permanently
+redirects `www.mkotas.cz` and HTTP to that origin, preserving the path and query
+string. It runs before asset handling and passes all other requests to `ASSETS`,
+including genuine 404 responses. Other subdomains and local previews are excluded.
