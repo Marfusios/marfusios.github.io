@@ -45,12 +45,16 @@ a { transition: color var(--duration-1) var(--ease-standard), border-color var(-
 .hero-pattern { position: absolute; inset: 0; background: url('../images/maze-pattern.png') repeat; opacity: 0.06; mix-blend-mode: overlay; pointer-events: none; }
 .hero-glow { position: absolute; inset: 0; background: radial-gradient(circle at 82% 30%, rgba(232,174,13,0.18), transparent 55%); pointer-events: none; }
 .hero-inner { position: relative; z-index: 1; }
+/* Items wrap whole on narrow screens. Every item draws its leading dot; the
+   24px strip that holds each line's first dot is shifted left and clipped. */
 .hero-eyebrow {
-  display: inline-flex; align-items: center; gap: 10px;
+  display: inline-flex; flex-wrap: wrap; align-items: center; row-gap: 6px;
+  margin-left: -24px; clip-path: inset(0 0 0 24px);
   font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--gold-500); margin-bottom: 22px;
 }
-.hero-eyebrow .sep { width: 4px; height: 4px; background: var(--gold-500); border-radius: 50%; opacity: 0.6; }
+.hero-eyebrow span { display: inline-flex; align-items: center; white-space: nowrap; }
+.hero-eyebrow span::before { content: ""; width: 4px; height: 4px; margin: 0 10px; background: var(--gold-500); border-radius: 50%; opacity: 0.6; }
 .hero-title {
   font-family: var(--font-display); font-weight: 600;
   font-size: 60px; line-height: 1.05; letter-spacing: -0.02em;
