@@ -14,7 +14,7 @@ Personal site for Mariusz Kotas. Static HTML/CSS/JS, deployed to Cloudflare Work
 ```bash
 npm install     # Install wrangler
 npm run dev     # Local dev server (wrangler dev)
-npm run deploy  # Deploy to Cloudflare (wrangler deploy)
+npm run deploy  # Manual deploy (wrangler deploy); pushes to master deploy automatically
 ```
 
 ## Structure
@@ -60,12 +60,14 @@ Typography: Fraunces (display), Inter (body), JetBrains Mono (code/locations).
 
 ## Deploy
 
-Cloudflare Workers Static Assets:
+Pushing to `master` deploys the site: Cloudflare Workers Builds is connected to this
+repository and builds and deploys the worker on every push. The "Workers Builds:
+marfusios" check on the commit shows the result, and the new version is live within a
+minute. To undo a deploy, revert the commit and push.
 
-```bash
-npm install
-npm run deploy
-```
+`npm run deploy` uploads the local `public/` folder straight to Cloudflare and bypasses
+git. Use it only as a fallback and push the same change afterwards, because the next
+push replaces whatever it deployed. Wrangler needs Node.js 20 or newer.
 
 Configure the custom domain (`mkotas.cz`) in the Cloudflare dashboard once the worker is deployed.
 
